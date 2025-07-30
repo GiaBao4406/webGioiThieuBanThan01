@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trần Gia Bảo</title>
+    <link rel="icon" href="anhDaiDien.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-card">
+        <img src="anhDaiDien.jpg" alt="Ảnh đại diện" class="avatar" />
+        <h1>Trần Gia Bảo</h1>
+        <p>Sinh viên CNTT | Web - Mobile - AI Developer</p>
+        <p>Đam mê tạo ra sản phẩm công nghệ hữu ích cho cộng đồng.</p>
+        <div class="buttons">
+          <button onclick="showMore()">Xem thêm</button>
+          <button onclick="toggleContact()">Liên hệ</button>
+        </div>
+        <div id="more-info" style="display: none">
+          <p>🎓 Năm 2 ngành CNTT</p>
+          <p>📱 Dự án: Hành trình chinh phục bản thân</p>
+          <p>🏋️ Mục tiêu cá nhân: Trở thành kỹ sư CNTT giỏi</p>
+        </div>
+        <div id="contact-info" style="display: none; margin-top: 10px">
+          <p>
+            📧 Gmail:
+            <a href="mailto:g.baotran06@gmail.com">g.baotran06@gmail.com</a>
+          </p>
+          <p>
+            🌐 Facebook:
+            <a href="https://www.facebook.com/gibor06" target="_blank"
+              >facebook.com/gibor06</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

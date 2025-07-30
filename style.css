@@ -1,0 +1,202 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #dddd81, #e17979);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #ad3636;
+}
+
+p {
+  color: #3d2424;
+  margin: 10px 0;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button,
+.email-btn {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+button:hover,
+.email-btn:hover {
+  background-color: #a521a5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #222;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(249, 3, 232, 0.3);
+}
+.profile-card {
+  transition: all 0.3s ease;
+}
+
+.profile-card {
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bubble-light {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 1000;
+  animation: bubble-float 0.8s ease-out forwards;
+  box-shadow: 0 0 10px rgba(239, 112, 220, 0.724);
+}
+
+@keyframes bubble-float {
+  to {
+    transform: translateY(-30px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+button {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #a556f4;
+  color: rgb(235, 243, 160);
+}
+
+button.active {
+  background-color: #000000;
+  color: white;
+}
+
+.auto-bubble {
+  position: fixed;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float-up 4s ease-in infinite;
+  z-index: 0;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+body {
+  animation: gradient-flow 10s ease infinite;
+  background: linear-gradient(-45deg, #00c6ff, #0072ff, #ff66cc, #ff9966);
+  background-size: 400% 400%;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.click-ripple {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: rgba(220, 244, 111, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: ripple-anim 0.6s ease-out forwards;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
